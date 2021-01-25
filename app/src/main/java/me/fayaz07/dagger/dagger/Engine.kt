@@ -1,4 +1,4 @@
-package me.fayaz07.dagger
+package me.fayaz07.dagger.dagger
 
 interface Engine {
     fun start()

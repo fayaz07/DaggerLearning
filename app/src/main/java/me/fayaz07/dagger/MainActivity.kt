@@ -2,6 +2,8 @@ package me.fayaz07.dagger
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import me.fayaz07.dagger.car.Car
+import me.fayaz07.dagger.dagger.DaggerCarComponent
 import javax.inject.Inject
 
 class MainActivity : AppCompatActivity() {
