@@ -10,7 +10,12 @@ class Car @Inject constructor(
 
     private val TAG: String = "Car"
 
-    public fun drive() {
+    fun drive() {
         Log.d(TAG, "driving...")
+    }
+
+    @Inject
+    fun enableRemote(remote: Remote){
+        remote.setListener(this)
     }
 }

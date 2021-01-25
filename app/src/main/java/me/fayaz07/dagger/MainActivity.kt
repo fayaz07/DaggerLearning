@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity() {
         var carComponent = DaggerCarComponent.create()
         carComponent.inject(this)
 //        car = carComponent.getCar()
+
         car.drive()
     }
 }
