@@ -1,6 +1,3 @@
 package me.fayaz07.dagger
 
-import javax.inject.Inject
-
-class Wheels @Inject constructor(){
-}
+class Wheels(val rims: Rims, val tyres: Tyres)
