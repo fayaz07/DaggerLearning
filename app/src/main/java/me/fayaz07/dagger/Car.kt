@@ -11,6 +11,7 @@ class Car @Inject constructor(
     private val TAG: String = "Car"
 
     fun drive() {
+        engine.start()
         Log.d(TAG, "driving...")
     }
 
