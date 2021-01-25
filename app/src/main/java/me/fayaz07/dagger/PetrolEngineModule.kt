@@ -1,13 +1,11 @@
 package me.fayaz07.dagger
 
+import dagger.Binds
 import dagger.Module
-import dagger.Provides
 
 @Module
-class PetrolEngineModule {
+abstract class PetrolEngineModule {
 
-    @Provides
-    fun providePetrolEngine(petrolEngine: PetrolEngine) : Engine  {
-        return petrolEngine
-    }
+    @Binds
+    abstract fun bindEngine(petrolEngine: PetrolEngine): Engine
 }
